@@ -1,6 +1,6 @@
 # base-structure
 
-Golang版本的基本数据结构实现
+算法练习中使用到的基本数据结构实现（golang版本）
 
 ## 清单
 
@@ -8,4 +8,3 @@ Golang版本的基本数据结构实现
 - 栈
     - 基于数组实现的栈: ArrayStack
     - 基于单链表实现的栈：LinkedStack
-    
