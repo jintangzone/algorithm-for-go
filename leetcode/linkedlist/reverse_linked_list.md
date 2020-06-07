@@ -1,6 +1,6 @@
 # 206.反转链表
 
-## 原题
+### 原题
 
 反转一个单链表。
 
@@ -17,3 +17,20 @@
 来源：力扣（LeetCode）
 
 [链接：https://leetcode-cn.com/problems/reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list)
+
+### 双指针法
+
+```go
+func ReverseLinkedList(link *linkedlist.LinkedList) {
+	var prev *linkedlist.LinkNode
+	cur := link.Head
+	for cur != nil {
+		cur.Next, prev, cur = prev, cur, cur.Next
+	}
+	link.Head = prev
+}
+```
+
+
+
+
