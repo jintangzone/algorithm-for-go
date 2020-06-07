@@ -8,3 +8,4 @@
 
 - #### LinkedList
     - [206.反转链表](https://github.com/jintangzone/algorithm-for-go/blob/master/leetcode/linkedlist/reverse_linked_list.md)
+    - [141.环形链表](https://github.com/jintangzone/algorithm-for-go/blob/master/leetcode/linkedlist/linked_list_cycle.md)
