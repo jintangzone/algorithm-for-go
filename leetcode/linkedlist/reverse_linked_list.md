@@ -21,13 +21,13 @@
 ### 双指针法
 
 ```go
-func ReverseLinkedList(link *linkedlist.LinkedList) {
-	var prev *linkedlist.LinkNode
-	cur := link.Head
+func reverseList(head *ListNode) *ListNode {
+	var pre *ListNode
+	cur := head
 	for cur != nil {
-		cur.Next, prev, cur = prev, cur, cur.Next
+		cur.Next, pre, cur = pre, cur, cur.Next
 	}
-	link.Head = prev
+	return pre
 }
 ```
 

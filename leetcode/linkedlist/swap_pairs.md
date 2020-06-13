@@ -18,18 +18,15 @@
 ### 借空节点的三指针法
 
 ```go
-func SwapNode(link *linkedlist.LinkedList) {
-	if link.Head == nil || link.Head.Next == nil {
-		return
-	}
-	pre := new(linkedlist.LinkNode)
-	pre.Next = link.Head
-	link.Head = link.Head.Next
-	for pre.Next != nil && pre.Next.Next != nil {
-		a := pre.Next
+func swapPairs(head *ListNode) *ListNode {
+	dummyHead := &ListNode{Val: 0, Next: head}
+	p := dummyHead
+	for p.Next != nil && p.Next.Next != nil {
+		a := p.Next
 		b := a.Next
-		pre.Next, b.Next, a.Next = b, a, b.Next
-		pre = a
+		p.Next, a.Next, b.Next = b, b.Next, a
+		p = a
 	}
+	return dummyHead.Next
 }
 ```
