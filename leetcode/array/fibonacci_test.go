@@ -6,5 +6,5 @@ import (
 )
 
 func TestFib(t *testing.T) {
-	fmt.Println(fib(9))
+	fmt.Println(fib2(40))
 }
